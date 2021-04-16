@@ -12,7 +12,7 @@ There is a simple safety mechanism implementded, namely fences. Those are blocks
 Additionaly, there are functions with `_debug` suffix. Those functions take `__LINE__` and `__FILE__` preprocessor's macros in order to save that information to newly allocated memory block's structure for easier debugging of the code.
 ## Sample program
 Before we allocate any memory, we need to initialize the heap with `heap_setup()` function, simillarly when we are done using our allocator, we should call `heap_clean()`.
-```
+```cpp
 #include "heap.h"
 
 int main() {
